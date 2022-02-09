@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Document</title>
+    <link rel="stylesheet" href="css/style.css  ">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            
+            <ul>
+                <li class="logo">logo</li>
+                <li><a href="index.html">Screen 1</a></li>
+                <li><a href="screen2.html">Screen 2</a></li>
+                <li><a href="screen3.html">Screen 3</a></li>
+                <button class="search" onclick="myfun()">search</button>
+            </ul>
+        </nav>
+    </header>
+    <div class="searchbar">
+        <input class="s1" type="search" value="" placeholder="Search Here...." >
+        <button class="cut1" onclick="cutx()">X</button>
+    </div>
+
+
+    <section class="section" >
+
+        <h3>Admin Login</h3>
+        <p id="head1">Login your details to access <br> the dashboard</p>
+        
+        <div class="inputcls">
+            <P>Email Address<br>
+                <div class="es">
+                    <input type="Email" placeholder="Enter Email Address" >
+                </div>
+            </P>
+        
+            <P>Password<br>
+                <div class="es">
+                    <input type="password" placeholder="*********************">
+                </div>
+            </P>
+
+                <p class="fp"><a href="#">Forget Password?</a></p>
+        </div>
+
+        
+        <button class="btn-login">Login</button>
+
+
+    
+    </section>
+
+
+
+
+
+
+
+    <script>    
+        let a = 1;
+        function myfun(){
+            
+            let ser = document.getElementsByClassName('searchbar')[0];
+            let hide = document.getElementsByTagName('nav')[0];
+            if(a == 1){
+                ser.style.cssText ='display:block;'
+                hide.style.cssText = 'display:none;'
+                return a = 1;
+            }
+            else{
+                hide.style.cssText = 'display:none;'
+                return a = 0; 
+            }
+        }
+        let b = 2
+        function cutx(){
+            let ser = document.getElementsByClassName('searchbar')[0];
+            let hide = document.getElementsByTagName('nav')[0];
+            if(b == 2){
+                ser.style.cssText ='opacity:0;'
+                hide.style.cssText = 'display:block;'
+                return b = 2;
+            }
+            else{
+                hide.style.cssText = 'display:none;'
+                return b = 0; 
+            }
+            
+
+        }
+    </script>
+
+</body>
+</html>
